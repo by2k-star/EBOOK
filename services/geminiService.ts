@@ -11,7 +11,6 @@ const getClient = () => {
 
 // Models
 const TEXT_MODEL = 'gemini-3.8-flash';
-const TEXT_MODEL = 'gemini-2.5-flash';
 const IMAGE_MODEL = 'gemini-2.5-flash-image'; 
 
 export const generateBookOutline = async (config: BookConfig): Promise<{ title: string; chapters: Omit<Chapter, 'status' | 'id'>[] }> => {
